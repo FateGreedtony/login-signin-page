@@ -19,22 +19,22 @@ const LoginForm = ({ onSubmit, isSignUp }) => {
       onSubmit={handleSubmit}
       className="bg-gradient-to-br from-yellow-100 via-yellow-200 to-red-100 border-2 border-red-500 shadow-xl rounded-2xl px-8 py-10 max-w-md mx-auto mt-10"    
     >
-      {isSignUp && (
-        <div className="mb-6">
-            <label className="text-yellow-700 font-semibold" htmlFor="email">
-              Name
-                <Input
-                    className="w-full border-2 border-yellow-400 rounded-lg py-2 px-3 focus:outline-none focus:border-red-500 transition"
-                    type="text"
-                    name="name"
-                    placeholder="Enter your name"
-                    value={form.name}
-                    onChange={handleChange}
-                />
-            </label>
-        </div>
+
+      <div className="mb-6">
+          <label className="text-yellow-700 font-semibold" htmlFor="username">
+            Username
+              <Input
+                  className="w-full border-2 border-yellow-400 rounded-lg py-2 px-3 focus:outline-none focus:border-red-500 transition"
+                  type="text"
+                  name="username"
+                  placeholder="Enter your Username"
+                  value={form.name}
+                  onChange={handleChange}
+              />
+          </label>
+      </div>
         
-      )}
+
         <div className="mb-6">
           <label className="text-yellow-700 font-semibold" htmlFor="email">
             E-mail
