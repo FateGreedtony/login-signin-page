@@ -6,7 +6,7 @@ const LoginPage = () => {
 
   const handleSubmit = (form) => {
     if (isSignUp) {
-      alert(`Sign Up Success!\nName: ${form.name}\nEmail: ${form.email}`);
+      alert(`Sign Up Success!\nName: ${form.username}\nEmail: ${form.email}`);
     } else {
       alert(`Login Success!\nEmail: ${form.email}`);
     }

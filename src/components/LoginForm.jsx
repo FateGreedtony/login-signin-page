@@ -28,7 +28,7 @@ const LoginForm = ({ onSubmit, isSignUp }) => {
                   type="text"
                   name="username"
                   placeholder="Enter your Username"
-                  value={form.name}
+                  value={form.username}
                   onChange={handleChange}
               />
           </label>
